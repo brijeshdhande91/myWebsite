@@ -580,3 +580,53 @@ label {
 p {
     margin: 0;
 }
+
+.ul li:hover .menu_hover::before {
+    width: 100%;
+    position: relative;
+    background: #b81e25;
+    transition: width 2.0s ease;
+}
+
+
+.abt li:hover .menu_hover::before {
+    width: 100%;
+    position: relative;
+    background: #b81e25;
+    transition: width 2.0s ease;
+}
+.menu_hover::before {
+    content: '';
+    display: block;
+    position: relative;
+    left: 0;
+    top: 25px;
+    height: 1.5px;
+    width: 0;
+    transition: width 0.5s ease, background .5s ease;
+}
+.menu_hover::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 1.5px;
+    width: 0;
+    background: #b81e25;
+    transition: width .5s ease;
+}
+
+a.menu_hover {
+    display: inline-block;
+    position: relative;
+    margin: 0 5px;
+    color: #666;
+    text-decoration: none !Important;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+}
